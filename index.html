@@ -241,5 +241,19 @@
         </div>
         
     </section>
+    <script>
+        // Function to handle order button click
+        function handleOrderButtonClick() {
+        alert("Your order has been placed!");
+        }
+
+        // Get all the order buttons
+        const orderButtons = document.querySelectorAll('input[type="button"][value="Order Now"]');
+
+        // Add event listener to each order button
+        orderButtons.forEach((button) => {
+        button.addEventListener('click', handleOrderButtonClick);
+        });
+    </script>
 </body>
 </html>
